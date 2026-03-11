@@ -149,6 +149,26 @@ export default function Home() {
     };
   }, [fobPrice, exchangeRate, quantity, weightKg, intlShippingPerKg, insurancePct, dutyPct, customsClearance, quarantineFee, localShippingRate, platform, targetMargin]);
 
+  const presets = [
+    { name: "📱 Phone Case (China→AU)", currency: "USD", fob: 2, qty: 500, weight: 0.05, shipping: 6, hs: "3926", margin: 50, platform: "ebay" },
+    { name: "👗 Women's Dress (China→AU)", currency: "USD", fob: 15, qty: 200, weight: 0.3, shipping: 8, hs: "6204", margin: 40, platform: "ebay" },
+    { name: "💻 Laptop (US→AU)", currency: "USD", fob: 800, qty: 5, weight: 2.5, shipping: 12, hs: "8471", margin: 15, platform: "amazon" },
+    { name: "🧴 Skincare Set (Korea→AU)", currency: "USD", fob: 8, qty: 300, weight: 0.4, shipping: 7, hs: "3304", margin: 45, platform: "shopify" },
+    { name: "🪑 Office Chair (China→AU)", currency: "USD", fob: 45, qty: 50, weight: 15, shipping: 4, hs: "9401", margin: 35, platform: "none" },
+    { name: "⌚ Digital Watch (China→AU)", currency: "USD", fob: 5, qty: 1000, weight: 0.08, shipping: 6, hs: "9102", margin: 60, platform: "ebay" },
+  ];
+
+  const applyPreset = (p: typeof presets[0]) => {
+    setCurrency(p.currency);
+    setFobPrice(p.fob);
+    setQuantity(p.qty);
+    setWeightKg(p.weight);
+    setIntlShippingPerKg(p.shipping);
+    setHsCode(p.hs);
+    setTargetMargin(p.margin);
+    setPlatform(p.platform);
+  };
+
   const costLayers = [
     { label: "FOB Price (AUD)", value: costs.fobAud, color: "bg-blue-500" },
     { label: "Int'l Shipping", value: costs.internationalShipping, color: "bg-cyan-500" },
@@ -168,6 +188,18 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-2">🚢 AU Import Pricing Calculator</h1>
         <p className="text-lg opacity-70">Calculate the true landed cost of importing goods to Australia</p>
         <p className="text-sm opacity-50">Exchange rates: {exchangeRatesData.date} | 1 AUD = {exchangeRate.toFixed(4)} {currency}</p>
+      </div>
+
+      {/* Preset Scenarios */}
+      <div className="mb-6">
+        <h2 className="text-lg font-semibold mb-2">⚡ Quick Start — Common Import Scenarios</h2>
+        <div className="flex flex-wrap gap-2">
+          {presets.map((p) => (
+            <button key={p.name} className="btn btn-sm btn-outline" onClick={() => applyPreset(p)}>
+              {p.name}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

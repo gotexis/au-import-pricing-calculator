@@ -12,8 +12,34 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AU Import Pricing Calculator",
+    "description": "Free Australian import cost calculator. Calculate duty, GST, shipping, and total landed cost for importing goods to Australia.",
+    "url": "https://import.rollersoft.com.au",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "AUD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "Rollersoft",
+      "url": "https://rollersoft.com.au"
+    }
+  };
+
   return (
     <html lang="en" data-theme="corporate">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-screen bg-base-200">
         <div className="navbar bg-primary text-primary-content shadow-lg">
           <div className="navbar-start">
