@@ -1,0 +1,72 @@
+{
+  "base": "AUD",
+  "date": "2026-03-10",
+  "fetched_at": "2026-03-11T06:55:28.252103Z",
+  "rates": {
+    "USD": {
+      "rate": 0.71177,
+      "inverse": 1.404948,
+      "name": "US Dollar"
+    },
+    "CNY": {
+      "rate": 4.895,
+      "inverse": 0.20429,
+      "name": "Chinese Yuan"
+    },
+    "JPY": {
+      "rate": 112.3,
+      "inverse": 0.008905,
+      "name": "Japanese Yen"
+    },
+    "GBP": {
+      "rate": 0.52917,
+      "inverse": 1.889752,
+      "name": "British Pound"
+    },
+    "EUR": {
+      "rate": 0.61143,
+      "inverse": 1.63551,
+      "name": "Euro"
+    },
+    "HKD": {
+      "rate": 5.5686,
+      "inverse": 0.179578,
+      "name": "Hong Kong Dollar"
+    },
+    "KRW": {
+      "rate": 1046.39,
+      "inverse": 0.000956,
+      "name": "South Korean Won"
+    },
+    "SGD": {
+      "rate": 0.90553,
+      "inverse": 1.104326,
+      "name": "Singapore Dollar"
+    },
+    "NZD": {
+      "rate": 1.1982,
+      "inverse": 0.834585,
+      "name": "New Zealand Dollar"
+    },
+    "THB": {
+      "rate": 22.51,
+      "inverse": 0.044425,
+      "name": "Thai Baht"
+    },
+    "MYR": {
+      "rate": 2.7937,
+      "inverse": 0.357948,
+      "name": "Malaysian Ringgit"
+    },
+    "IDR": {
+      "rate": 12005,
+      "inverse": 8.3e-05,
+      "name": "Indonesian Rupiah"
+    },
+    "INR": {
+      "rate": 65.454,
+      "inverse": 0.015278,
+      "name": "Indian Rupee"
+    }
+  }
+}

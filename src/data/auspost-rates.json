@@ -1,0 +1,15 @@
+[
+  {"state": "NSW", "zone": "Metro", "base_kg": 5, "base_price": 8.95, "per_extra_kg": 1.50},
+  {"state": "NSW", "zone": "Regional", "base_kg": 5, "base_price": 12.50, "per_extra_kg": 2.00},
+  {"state": "VIC", "zone": "Metro", "base_kg": 5, "base_price": 8.95, "per_extra_kg": 1.50},
+  {"state": "VIC", "zone": "Regional", "base_kg": 5, "base_price": 12.50, "per_extra_kg": 2.00},
+  {"state": "QLD", "zone": "Metro", "base_kg": 5, "base_price": 9.95, "per_extra_kg": 1.80},
+  {"state": "QLD", "zone": "Regional", "base_kg": 5, "base_price": 14.50, "per_extra_kg": 2.50},
+  {"state": "SA", "zone": "Metro", "base_kg": 5, "base_price": 10.50, "per_extra_kg": 1.80},
+  {"state": "SA", "zone": "Regional", "base_kg": 5, "base_price": 15.00, "per_extra_kg": 2.50},
+  {"state": "WA", "zone": "Metro", "base_kg": 5, "base_price": 12.95, "per_extra_kg": 2.20},
+  {"state": "WA", "zone": "Regional", "base_kg": 5, "base_price": 18.50, "per_extra_kg": 3.00},
+  {"state": "TAS", "zone": "All", "base_kg": 5, "base_price": 12.95, "per_extra_kg": 2.20},
+  {"state": "NT", "zone": "All", "base_kg": 5, "base_price": 15.95, "per_extra_kg": 3.00},
+  {"state": "ACT", "zone": "All", "base_kg": 5, "base_price": 8.95, "per_extra_kg": 1.50}
+]
